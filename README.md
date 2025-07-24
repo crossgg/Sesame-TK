@@ -64,8 +64,12 @@
 |----------------------------|------------------------------|  
 | `ANDROID_SIGNING_KEY`      | `keystore.jks`文件的base64编码字符串 |  
 | `ANDROID_KEY_ALIAS`        | `keystore.jks`文件别名           |  
-| `ANDROID_SIGNING_PASSWORD` | `keystore.jks`文件密码           |  
+| `ANDROID_KEYSTORE_PASSWORD` | `keystore.jks`文件密码           |  
 | `ANDROID_KEY_PASSWORD`     | `keystore.jks`文件密码           |  
+| `TARGET_REPO_PAT`     |`https://github.com/settings/personal-access-tokens` token    用于发布release       |  
+| `TG_BOT_TOKEN`     |TG_BOT_TOKEN  用于编译完成通知       |  
+| `TG_CHAT_ID`     |TG_CHAT_ID 用于编译完成通知        |  
+
 
 设置好这些后，去仓库新建一个release，随便新建一个tag，然后点击`Publish release`，GitHub Actions会自动编译并发布APK文件到release中，下载安装即可
 
